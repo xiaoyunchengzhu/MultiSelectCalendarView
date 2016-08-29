@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin">
+        <ImageButton
+            android:id="@+id/calendarview_imgbutton_left"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:src="@mipmap/calendar_month_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/calendarviewtext_month"
+            android:text="2016年4月"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/calendarview_imgbutton_right"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:src="@mipmap/calendar_month_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="日"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="一"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="二"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="三"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="四"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="五"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="六"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/calendarview_grid_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+
+        android:layout_margin="10dp"
+        android:gravity="center"></GridView>
+
+
+</LinearLayout>
