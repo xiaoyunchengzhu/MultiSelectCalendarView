@@ -63,10 +63,11 @@ public class CalendarGridViewAdapter extends BaseAdapter {
 
         if (list.get(position).isselect()){
             if (itembackgourd==-1) {
-                textView.setBackgroundColor(context.getResources().getColor(R.color.tet_blue));
+                textView.setBackgroundColor(context.getResources().getColor(R.color.item_color));
             }else {
                 textView.setBackgroundResource(itembackgourd);
             }
+            textView.setTextColor(context.getResources().getColor(R.color.text_white));
         }else {
             textView.setBackgroundColor(context.getResources().getColor(R.color.base_bg));
         }
@@ -83,11 +84,11 @@ public class CalendarGridViewAdapter extends BaseAdapter {
                     list.get(position).setIsselect(!list.get(position).isselect());
                     if (list.get(position).isselect()){
                         if (itembackgourd==-1) {
-                            finalTextView.setBackgroundColor(context.getResources().getColor(R.color.tet_blue));
+                            finalTextView.setBackgroundColor(context.getResources().getColor(R.color.item_color));
                         }else {
                             finalTextView.setBackgroundResource(itembackgourd);
                         }
-
+                        finalTextView.setTextColor(context.getResources().getColor(R.color.text_white));
                         Calendar calendar=Calendar.getInstance();
                         calendar.set(list.get(position).getYear(),list.get(position).getMonth(),list.get(position).getDateOfMonth());
                         customCalendarView.addSelectDate(ConfigUtils.simpleDate(calendar.getTime()));

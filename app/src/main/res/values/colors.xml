@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="tet_blue">#2296f0</color>
+
+    <color name="text_white">#ffffff</color>
     <color name="base_bg">#f5f5f5</color><!--<!-用于背景色->-->
+    <color name="item_color">#FF4143</color>
 </resources>

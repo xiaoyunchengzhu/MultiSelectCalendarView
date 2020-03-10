@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.SimpleFormatter;
+
 
 /**
  * Created by zhangshiyu on 2016/8/25.
@@ -151,7 +151,8 @@ public class CustomCalendarView extends LinearLayout {
                         Calendar calendar = Calendar.getInstance();
                         calendar.set(currentYear, currentMonth, dateItem.getDateOfMonth());
                         TextView textView = (TextView) gridView.getChildAt(i);
-                        textView.setBackgroundColor(getResources().getColor(R.color.tet_blue));
+                        textView.setBackgroundColor(getResources().getColor(R.color.item_color));
+                        textView.setTextColor(getResources().getColor(R.color.text_white));
 
                         addSelectDate(ConfigUtils.simpleDate(calendar.getTime()));
                     }
@@ -179,8 +180,9 @@ public class CustomCalendarView extends LinearLayout {
                         Calendar calendar = Calendar.getInstance();
                         calendar.set(currentYear, currentMonth, dateItem.getDateOfMonth());
                         TextView textView = (TextView) gridView.getChildAt(i);
-                        textView.setBackgroundColor(getResources().getColor(R.color.tet_blue));
 
+                        textView.setBackgroundColor(getResources().getColor(R.color.item_color));
+                        textView.setTextColor(getResources().getColor(R.color.text_white));
                         addSelectDate(ConfigUtils.simpleDate(calendar.getTime()));
                     }
                 } else {

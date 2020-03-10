@@ -16,7 +16,7 @@
 
     <com.xiaoyunchengzhu.multiselectcalendarview.customview.CustomCalendarView
         android:id="@+id/calendarview"
-        app:item_select_backgroud="@color/tet_blue"
+        app:item_select_backgroud="@color/item_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
